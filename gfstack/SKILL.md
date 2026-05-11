@@ -18,6 +18,7 @@ description: "GoFrame v2 enterprise architecture skill index. Triggers for gener
 | `gfstack-route` | Route registration (group.Bind), middleware | Configuring routes/middleware |
 | `gfstack-infra` | Token system, bootstrap (main.go), response format | Infrastructure tasks |
 | `gfstack-style` | Error codes, validation, variable declaration, named returns, godoc, naming conventions | Code style reviews |
+| `gfstack-audit` | Security audit checklist: injection, sensitive data, concurrency, panics, stability | Code security review |
 
 ## Rule Precedence
 
@@ -28,4 +29,5 @@ In case of conflicts between sub-skills: **gfstack-style** > **gfstack-overview*
 - Writing a CRUD API: `gfstack-api` + `gfstack-logic` + `gfstack-data`
 - Adding middleware: `gfstack-route` only
 - Defining data models: `gfstack-data` only
-- Code review: `gfstack-style` only
+- Code review: `gfstack-style` + `gfstack-audit`
+- Security audit: `gfstack-audit` only
