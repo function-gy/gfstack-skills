@@ -1,8 +1,14 @@
 # gfstack — GoFrame v2 企业级开发技能集
 
-AI 辅助开发技能集，为 [opencode](https://github.com/anomalyco/opencode) 提供强制性的分层架构规范和编码风格约束。
+AI 辅助开发技能集，适用于 opencode、Claude Code、Codex 等 AI 编程助手，提供强制性的分层架构规范和编码风格约束。
 
 ## 快速安装
+
+```bash
+npx degit function-gy/gfstack-skills ~/.opencode/skills
+```
+
+或使用 git：
 
 ```bash
 git clone git@github.com:function-gy/gfstack-skills.git ~/.opencode/skills
