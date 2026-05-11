@@ -1,6 +1,6 @@
 ---
 name: gfstack-route
-description: "HotGo router and middleware specification. Covers route registration with group.Bind, middleware binding (AdminAuth, Develop), and middleware file conventions. TRIGGER: router, route registration, group.Bind, AdminAuth, route group, middleware binding, middleware, CORS, Ctx, ResponseHandler, Blacklist, PreFilter, RequestLog, DemoLimit, Develop. DO NOT TRIGGER: API definitions (see gfstack-api), business logic (see gfstack-logic)."
+description: "Router and middleware specification. Covers route registration with group.Bind, middleware binding (AdminAuth, Develop), and middleware file conventions. TRIGGER: router, route registration, group.Bind, AdminAuth, route group, middleware binding, middleware, CORS, Ctx, ResponseHandler, Blacklist, PreFilter, RequestLog, DemoLimit, Develop. DO NOT TRIGGER: API definitions (see gfstack-api), business logic (see gfstack-logic)."
 ---
 
 # gfstack-route

@@ -1,6 +1,6 @@
 ---
 name: gfstack-data
-description: "HotGo data model layer specification. Covers Entity, DO, Input DTOs, Form base types, DAO pattern, and ORM usage patterns. TRIGGER: entity, ORM entity, table mapping, orm tag, gtime.Time, soft delete, DO, data object, ORM write, input DTO, Inp, Filter validation, UpdateFields, InsertFields, ListModel, PageReq, PageRes, pagination, DAO, data access object, Columns, Ctx, gf gen dao, gdb.Model, ScanAndCount, Fields, WhereLike, WherePri, Transaction, IsUnique. DO NOT TRIGGER: API definitions (see gfstack-api), business logic (see gfstack-logic)."
+description: "Data model layer specification. Covers Entity, DO, Input DTOs, Form base types, DAO pattern, and ORM usage patterns. TRIGGER: entity, ORM entity, table mapping, orm tag, gtime.Time, soft delete, DO, data object, ORM write, input DTO, Inp, Filter validation, UpdateFields, InsertFields, ListModel, PageReq, PageRes, pagination, DAO, data access object, Columns, Ctx, gf gen dao, gdb.Model, ScanAndCount, Fields, WhereLike, WherePri, Transaction, IsUnique. DO NOT TRIGGER: API definitions (see gfstack-api), business logic (see gfstack-logic)."
 ---
 
 # gfstack-data

@@ -1,6 +1,6 @@
 ---
 name: gfstack-api
-description: "HotGo API layer specification. Covers API request/response structs with g.Meta route binding, controller interface definitions, and controller implementation patterns. TRIGGER: API struct, g.Meta, route binding, request struct, response struct, path definition, Req/Res, controller interface, IModuleV1, controller implementation, thin handler, ControllerV1, NewV1. DO NOT TRIGGER: business logic (see gfstack-logic), data models (see gfstack-data)."
+description: "API layer specification. Covers API request/response structs with g.Meta route binding, controller interface definitions, and controller implementation patterns. TRIGGER: API struct, g.Meta, route binding, request struct, response struct, path definition, Req/Res, controller interface, IModuleV1, controller implementation, thin handler, ControllerV1, NewV1. DO NOT TRIGGER: business logic (see gfstack-logic), data models (see gfstack-data)."
 ---
 
 # gfstack-api

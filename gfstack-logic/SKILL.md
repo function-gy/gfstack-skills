@@ -1,6 +1,6 @@
 ---
 name: gfstack-logic
-description: "HotGo service and logic layer specification. Covers service interface pattern, logic implementation with header pattern, method signatures, and init registration. TRIGGER: service interface, ISys, Register, accessor function, logic implementation, sSys, init register, business logic, service locator pattern. DO NOT TRIGGER: API definitions (see gfstack-api), ORM operations (see gfstack-data)."
+description: "Service and logic layer specification. Covers service interface pattern, logic implementation with header pattern, method signatures, and init registration. TRIGGER: service interface, ISys, Register, accessor function, logic implementation, sSys, init register, business logic, service locator pattern. DO NOT TRIGGER: API definitions (see gfstack-api), ORM operations (see gfstack-data)."
 ---
 
 # gfstack-logic

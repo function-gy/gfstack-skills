@@ -1,6 +1,6 @@
 ---
 name: gfstack-infra
-description: "HotGo infrastructure specification. Covers token/JWT authentication system, HTTP server bootstrap (main.go), and standard JSON response format. TRIGGER: token, JWT, login, logout, ParseLoginUser, HS256, authentication, Bearer token, main.go, HTTP server, gcmd.Command, global.Init, server startup, Response struct, JSON response, response format, code message data. DO NOT TRIGGER: middleware (see gfstack-route), database (see gfstack-data)."
+description: "Infrastructure specification. Covers token/JWT authentication system, HTTP server bootstrap (main.go), and standard JSON response format. TRIGGER: token, JWT, login, logout, ParseLoginUser, HS256, authentication, Bearer token, main.go, HTTP server, gcmd.Command, global.Init, server startup, Response struct, JSON response, response format, code message data. DO NOT TRIGGER: middleware (see gfstack-route), database (see gfstack-data)."
 ---
 
 # gfstack-infra

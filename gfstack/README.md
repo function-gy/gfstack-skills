@@ -1,4 +1,4 @@
-# HotGo Architecture Skills
+# gfstack — 企业级开发技能集
 
 GoFrame v2 企业级项目架构知识库，已拆分为 7 个独立子技能，按需加载减少 token 浪费。
 

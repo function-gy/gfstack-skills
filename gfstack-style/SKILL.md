@@ -1,6 +1,6 @@
 ---
 name: gfstack-style
-description: "HotGo coding standards. Covers error code specification, validation rules, variable declaration conventions, named return values, godoc comments, struct field tags (json+dc), inline if error handling, and naming conventions. TRIGGER: error code, gcode.New, error handling, errcode, validation, Filter, g.Validator, PreFilter, v tag, variable declaration, var block, short variable declaration, named return, coding style, naming convention, I prefix, s prefix, New function, Register function. DO NOT TRIGGER: API definitions (see gfstack-api), data models (see gfstack-data), middleware (see gfstack-route)."
+description: "Coding standards. Covers error code specification, validation rules, variable declaration conventions, named return values, godoc comments, struct field tags (json+dc), inline if error handling, and naming conventions. TRIGGER: error code, gcode.New, error handling, errcode, validation, Filter, g.Validator, PreFilter, v tag, variable declaration, var block, short variable declaration, named return, coding style, naming convention, I prefix, s prefix, New function, Register function. DO NOT TRIGGER: API definitions (see gfstack-api), data models (see gfstack-data), middleware (see gfstack-route)."
 ---
 
 # gfstack-style

@@ -1,6 +1,6 @@
 # gfstack — GoFrame v2 企业级开发技能集
 
-基于 [HotGo](https://github.com/bufanyun/hotgo) 架构的 AI 辅助开发技能集，为 [opencode](https://github.com/anomalyco/opencode) 提供强制性的分层架构规范和编码风格约束。
+AI 辅助开发技能集，为 [opencode](https://github.com/anomalyco/opencode) 提供强制性的分层架构规范和编码风格约束。
 
 ## 快速安装
 
