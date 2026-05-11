@@ -3,29 +3,29 @@ name: gfstack
 description: "GoFrame v2 enterprise architecture skill index. Triggers for general architecture questions — loads gfstack-* sub-skills for specific implementations. USE FOR: project structure overview, understanding architecture. For specific code: use gfstack-api, gfstack-logic, gfstack-data, gfstack-route, gfstack-infra, gfstack-style."
 ---
 
-# HotGo Architecture (模块索引)
+# gfstack — Skill Index
 
-> 本技能已拆分为 7 个独立子技能，按需加载，减少 token 浪费。
+> Split into 7 independent sub-skills for on-demand loading, minimizing token waste.
 
-## 子技能速查
+## Sub-Skills
 
-| 技能 | 覆盖内容 | 何时加载 |
-|------|---------|----------|
-| `gfstack-overview` | 项目目录布局、请求全链路、所有约束清单 | 理解架构全局 |
-| `gfstack-api` | API 定义（g.Meta Req/Res）、Controller 接口、Controller 实现 | 写或修改 API 层 |
-| `gfstack-logic` | Service 接口 + Logic 实现（header pattern、方法签名、init 注册） | 写业务逻辑 |
-| `gfstack-data` | Entity / DO / Input DTO / Form / DAO / ORM 全模式 | 操作数据层 |
-| `gfstack-route` | 路由注册（group.Bind）、中间件 | 配置路由/中间件 |
-| `gfstack-infra` | Token 系统、服务启动（main.go）、响应格式 | 基础设施 |
-| `gfstack-style` | 错误码、校验、变量声明、命名返回值、godoc、命名约定 | 编码规范检查 |
+| Skill | Coverage | When to Load |
+|-------|----------|--------------|
+| `gfstack-overview` | Directory layout, request flow, all constraint checklist | Understanding overall architecture |
+| `gfstack-api` | API definitions (g.Meta Req/Res), controller interface, controller implementation | Writing or modifying API layer |
+| `gfstack-logic` | Service interface + logic implementation (header pattern, method signature, init registration) | Writing business logic |
+| `gfstack-data` | Entity / DO / Input DTO / Form / DAO / ORM patterns | Data layer operations |
+| `gfstack-route` | Route registration (group.Bind), middleware | Configuring routes/middleware |
+| `gfstack-infra` | Token system, bootstrap (main.go), response format | Infrastructure tasks |
+| `gfstack-style` | Error codes, validation, variable declaration, named returns, godoc, naming conventions | Code style reviews |
 
-## 规则冲突
+## Rule Precedence
 
-如果多个子技能之间的规则冲突，以 **gfstack-style** 和 **gfstack-overview** 为准。
+In case of conflicts between sub-skills: **gfstack-style** > **gfstack-overview** > others.
 
-## 加载策略
+## Loading Strategy
 
-- 写 API 接口：加载 `gfstack-api` + `gfstack-logic` + `gfstack-data`
-- 加中间件：仅加载 `gfstack-route`
-- 定义数据模型：仅加载 `gfstack-data`
-- 代码审查：加载 `gfstack-style`
+- Writing a CRUD API: `gfstack-api` + `gfstack-logic` + `gfstack-data`
+- Adding middleware: `gfstack-route` only
+- Defining data models: `gfstack-data` only
+- Code review: `gfstack-style` only
