@@ -1,61 +1,62 @@
-# gfstack — GoFrame v2 Enterprise Dev Skills
+# gfstack — GoFrame v2 企业级开发技能集
 
-AI-assisted development skills based on [HotGo](https://github.com/bufanyun/hotgo) architecture for [opencode](https://github.com/anomalyco/opencode), enforcing strict layered architecture and coding conventions.
+基于 [HotGo](https://github.com/bufanyun/hotgo) 架构的 AI 辅助开发技能集，为 [opencode](https://github.com/anomalyco/opencode) 提供强制性的分层架构规范和编码风格约束。
 
-## Quick Install
+## 快速安装
 
 ```bash
 git clone git@github.com:function-gy/gfstack-skills.git ~/.opencode/skills
 ```
 
-To update:
+更新：
 
 ```bash
 cd ~/.opencode/skills && git pull
 ```
 
-Run `/skills` in opencode to see all installed skills.
+安装后在 opencode 中输入 `/skills` 即可查看所有技能。
 
-## Structure
+## 目录结构
 
 ```
 skills/
 ├── README.md
-├── gfstack/              # Entry index (this entry)
-│   └── examples/         # 20 code examples
-├── gfstack-overview/     # Architecture overview: layout, request flow, constraints
-├── gfstack-api/          # API layer: g.Meta Req/Res + Controller
-├── gfstack-logic/        # Logic layer: Service interface + Logic implementation
-├── gfstack-data/         # Data layer: Entity/DO/DTO + DAO + ORM
-├── gfstack-route/        # Route layer: Router + Middleware
-├── gfstack-infra/        # Infrastructure: Token + Bootstrap + Response
-├── gfstack-style/        # Standards: Error codes + Validation + Naming + Style
-├── ui-ux-pro-max/        # UI/UX design guidelines
-├── vue-best-practices/   # Vue.js best practices
-└── upgrade-skills/       # Skill auto-upgrade utility
+├── gfstack/              # 入口索引
+│   └── examples/         # 20 个代码示例
+├── gfstack-overview/     # 架构总览：目录布局、请求流、约束清单
+├── gfstack-api/          # API 层：g.Meta Req/Res + Controller
+├── gfstack-logic/        # 逻辑层：Service 接口 + Logic 实现
+├── gfstack-data/         # 数据层：Entity/DO/DTO + DAO + ORM
+├── gfstack-route/        # 路由层：Router + Middleware
+├── gfstack-infra/        # 基础设施：Token + 启动 + 响应格式
+├── gfstack-style/        # 规范层：错误码 + 校验 + 命名 + 编码风格
+├── gfstack-audit/        # 审计层：安全审查 + 代码检查清单
+├── ui-ux-pro-max/        # UI/UX 设计规范
+├── vue-best-practices/   # Vue.js 最佳实践
+└── upgrade-skills/       # 技能自动升级工具
 ```
 
-## On-Demand Loading
+## 按需加载
 
-gfstack skills are designed for minimal token usage — only relevant skills load per task:
+gfstack 技能设计为按需加载，减少 token 消耗：
 
-| Task | Skills Loaded |
+| 任务 | 加载的技能 |
 |------|---------------|
-| Write CRUD API | gfstack-api + gfstack-logic + gfstack-data |
-| Add middleware | gfstack-route |
-| Define data models | gfstack-data |
-| Understand architecture | gfstack-overview |
-| Code review | gfstack-style |
-| Token/auth | gfstack-infra |
+| 写 CRUD API | gfstack-api + gfstack-logic + gfstack-data |
+| 加中间件 | gfstack-route |
+| 定义数据模型 | gfstack-data |
+| 理解整体架构 | gfstack-overview |
+| 代码审查 | gfstack-style + gfstack-audit |
+| Token/认证 | gfstack-infra |
 
-## Core Principles
+## 核心原则
 
-1. Strict layering: Controller → Service → Logic → DAO
-2. Interface-driven: `ISysXxx` interface + `RegisterSysXxx()` pattern
-3. Auto-generated: DAO / Entity / DO by `gf gen dao`, never manually edit
-4. Naming: `I` prefix (interface), `s` prefix (logic struct), `New` (constructor), `Register` (registration)
-5. Errors: `gerror.Wrap()` + `gcode.New()` error codes
-6. Style: `:=` only in `for` loops, `var` blocks, named return values, Chinese godoc comments
+1. 严格分层：Controller → Service 接口 → Logic 实现 → DAO
+2. 接口驱动：`ISysXxx` 接口 + `RegisterSysXxx()` 注册模式
+3. 自动生成：DAO / Entity / DO 由 `gf gen dao` 生成，禁止手动修改
+4. 命名约定：`I` 前缀（接口）、`s` 前缀（Logic 结构体）、`New`（构造函数）、`Register`（注册函数）
+5. 错误处理：`gerror.Wrap()` 包装 + `gcode.New()` 错误码
+6. 编码风格：`:=` 仅用于 `for` 循环，变量用 `var` 块声明，函数用命名返回值，godoc 用中文注释
 
 ## License
 
