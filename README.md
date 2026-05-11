@@ -5,7 +5,7 @@ AI-assisted development skills based on [HotGo](https://github.com/bufanyun/hotg
 ## Quick Install
 
 ```bash
-git clone git@github.com:function-gy/gfstack.git ~/.opencode/skills
+git clone git@github.com:function-gy/gfstack-skills.git ~/.opencode/skills
 ```
 
 To update:
