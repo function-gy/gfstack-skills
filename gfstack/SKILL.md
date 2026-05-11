@@ -1,5 +1,5 @@
 ---
-name: "hotgo-architecture"
+name: gfstack
 description: "GoFrame v2 enterprise architecture skill index. Triggers for general architecture questions — loads gfstack-* sub-skills for specific implementations. USE FOR: project structure overview, understanding architecture. For specific code: use gfstack-api, gfstack-logic, gfstack-data, gfstack-route, gfstack-infra, gfstack-style."
 ---
 
